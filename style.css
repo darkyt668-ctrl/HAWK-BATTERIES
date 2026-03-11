@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+    font-family: Oswald, sans-serif;
+    
+}
+
+@media screen and (max-width:768px){
+    .maincontainer{
+      grid-template-columns: 3fr;
+      
+    }
+
+    .carousel{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.container{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 20px;
+   grid-row: 1/1;
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-content: space-evenly;
+}
+
+.container2{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    grid-row: 1/1;
+}
+
+.container3{
+    width: 30px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 300px;
+    grid-row: 1/1;
+}
+
+.maincontainer{
+    display: grid;
+    grid-template-rows: 100px 400px auto;
+    justify-content: space-evenly;
+
+
+}
+
+.maincontainer2{
+    display: grid;
+    grid-template-rows:100px auto;
+    margin-top: 100px;
+    gap: 20px;
+    justify-content: space-evenly;
+    
+}
+
+.carousel{
+   
+    margin: 0 auto;
+}
+
+.card-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifswald;
+}
+
+.about{
+    width: 350px;
+    background-color: darkgray;
+    border: 2px solid black;
+    color: white;
+    padding: 10px;
+   
+}
+
+.mainabout{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.auto{
+    
+   margin: 0 auto;
+   width: 400px;
+}
+
+.headingauto{
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+.auto button{
+    width: 200px;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+  }
+  
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px; 
+    text-align: left; 
+  }
+  
+  th {
+    background-color: #f2f2f2; 
+    color: #333;
+  }
+  
+  
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .DIMENSION{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .shadow-hr{
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    margin: 20px 0;
+    box-shadow:0,30,6 rgba(0, 0, 0, 0.3);
+  }
+
+  .about1{
+     width: 400px;
+     border-right: 4px solid lightgray;
+  }
+
+  .about2{
+    width: 800px;
+   
+  }
+
+  .mainhawk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .carousel-container {
+    width: 500px;
+    overflow: hidden; 
+    border: 3px solid black;
+    border-radius: 15px;
+    align-content: start;
+    height: 250px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 700%; 
+    animation: slideAnimation 20s infinite; 
+  }
+  
+  .carousel-slide img {
+    width: calc(100% / 7); 
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+  @keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(0); } 
+    15% { transform: translateX(-14.28%); } 
+    25% { transform: translateX(-14.28%); } 
+    100% { transform: translateX(0); }
+  }
+
+  .mainauto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .auto1{
+    width: 400px;
+    border-right: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    border-top:5px solid lightgray ;
+  }
+
+  .auto2-1{
+    width: 400px;
+    
+  }
+
+  .auto2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+  }
+ 
+  .auto2-1 p{
+    font-family: Oswald,sans-serif;
+  }
+
+  /* Default Desktop Style */
+
+.mainabout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.about{
+  flex: 1;
+}
+
+.auto{
+  flex: 1;
+  text-align: center;
+}
+
+.auto img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Make table responsive */
+
+.table{
+  width: 100%;
+  overflow-x: auto;
+}
+
+table{
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+
+/* ---------- Tablet Devices ---------- */
+
+@media (max-width: 992px){
+
+  .mainabout{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about{
+    padding: 10px;
+  }
+
+  .auto img{
+    max-width: 400px;
+  }
+
+}
+
+
+/* ---------- Mobile Devices ---------- */
+
+@media (max-width: 576px){
+
+  .navbar-brand{
+    font-size: 16px;
+  }
+
+  .headingauto{
+    font-size: 18px;
+  }
+
+  .about{
+    font-size: 14px;
+  }
+
+  .auto img{
+    max-width: 300px;
+  }
+
+  table{
+    font-size: 12px;
+  }
+
+}
+
+.maintube{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.maincard{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
