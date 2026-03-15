@@ -9,6 +9,87 @@
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+  /* Default Desktop Layout */
+.mainhawk{
+    display: flex;
+    gap: 30px;
+    padding: 20px 200px;
+}
+
+.about1{
+    width: 30%;
+}
+
+.about2{
+    width: 70%;
+}
+
+/* Fix heading spacing */
+h2{
+    margin-left: 200px;
+}
+
+p{
+    margin-left: 200px;
+}
+
+/* ========== Tablet Devices ========== */
+@media (max-width: 992px){
+
+.mainhawk{
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.about1{
+    width: 100%;
+}
+
+.about2{
+    width: 100%;
+}
+
+h2{
+    margin-left: 50px;
+}
+
+p{
+    margin-left: 50px;
+}
+
+}
+
+/* ========== Mobile Devices ========== */
+@media (max-width: 576px){
+
+.mainhawk{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about1{
+    width: 100%;
+}
+
+.about2{
+    width: 100%;
+}
+
+h2{
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+p{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.navbar-brand{
+    font-size: 16px;
+}
+
+}
 </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: azure;">

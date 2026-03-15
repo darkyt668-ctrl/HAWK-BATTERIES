@@ -11,6 +11,125 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    /* ========================= */
+/* DESKTOP DEFAULT (Already Working) */
+/* ========================= */
+
+.mainhawk{
+    display: flex;
+    gap: 40px;
+    padding: 20px 200px;
+}
+
+.about1{
+    width: 25%;
+}
+
+.about2{
+    width: 75%;
+}
+
+/* Carousel responsive */
+/* .carousel-container{
+    width: 100% !important;
+    max-width: 300px;
+} */
+
+
+/* ========================= */
+/* TABLET DEVICES */
+/* ========================= */
+
+@media (max-width: 992px){
+
+.mainhawk{
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.about1,
+.about2{
+    width: 100%;
+}
+
+/* Remove big margins */
+h2{
+    margin-left: 20px !important;
+}
+
+p{
+    margin-left: 20px !important;
+}
+
+/* Make carousel full width */
+.carousel-container{
+    width: 100% !important;
+}
+
+}
+
+
+/* ========================= */
+/* MOBILE DEVICES */
+/* ========================= */
+
+@media (max-width: 576px){
+
+/* Stack everything */
+.mainhawk{
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Full width sections */
+.about1,
+.about2{
+    width: 100%;
+}
+
+/* Fix headings */
+h2{
+    margin-left: 10px !important;
+    font-size: 20px;
+}
+
+/* Fix paragraphs */
+p{
+    margin-left: 10px !important;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Fix top title spacing */
+h2[style],
+p[style]{
+    margin-left: 10px !important;
+}
+
+/* Make images responsive */
+.carousel-container{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.carousel-slide img{
+    width: 100%;
+    height: auto;
+}
+
+/* Footer center */
+footer{
+    text-align: center;
+}
+
+footer ul{
+    justify-content: center !important;
+}
+
+}
+*{
+    font-family: Oswald , sans-serif;
+}
   </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: azure;">

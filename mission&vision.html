@@ -9,6 +9,100 @@
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+  /* ===== Desktop Layout ===== */
+.mainhawk{
+    display: flex;
+    gap: 40px;
+    padding: 20px 200px;
+}
+
+.about1{
+    width: 25%;
+}
+
+.about2{
+    width: 75%;
+}
+
+/* Fix heading spacing */
+.page-title{
+    margin-left: 200px;
+}
+
+.page-subtitle{
+    margin-left: 200px;
+}
+
+
+/* ===== Tablet ===== */
+@media (max-width: 992px){
+
+.mainhawk{
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.about1{
+    width: 100%;
+}
+
+.about2{
+    width: 100%;
+}
+
+.page-title,
+.page-subtitle{
+    margin-left: 50px;
+}
+
+}
+
+
+/* ===== Mobile Devices ===== */
+@media (max-width: 576px){
+
+/* Stack layout */
+.mainhawk{
+    flex-direction: column;
+    padding: 15px;
+}
+
+/* Sidebar full width */
+.about1{
+    width: 100%;
+}
+
+/* Content full width */
+.about2{
+    width: 100%;
+}
+
+/* Fix headings */
+.page-title,
+.page-subtitle{
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* Reduce text size slightly */
+.about2 h2{
+    font-size: 22px;
+}
+
+.about2 p{
+    font-size: 14px;
+}
+
+/* Footer fix */
+footer{
+    text-align: center;
+}
+
+footer ul{
+    justify-content: center !important;
+}
+
+}
 </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: azure;">

@@ -11,6 +11,97 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    
+/* ========================= */
+/* DESKTOP DEFAULT (Keep As It Is) */
+/* ========================= */
+
+.maintube{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.tube img{
+    width: 300px;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px){
+
+.mainhawk{
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.maintube{
+    flex-direction: column;
+}
+
+.tube img{
+    width: 100%;
+    height: auto;
+}
+
+}
+
+
+/* ========================= */
+/* MOBILE DEVICES */
+/* ========================= */
+
+@media (max-width: 576px){
+
+/* Stack everything */
+.mainhawk{
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Sidebar full width */
+.about1,
+.about2{
+    width: 100%;
+}
+
+/* Make image full width */
+.tube img{
+    width: 100%;
+    height: auto;
+}
+
+/* Image and summary in column */
+.maintube{
+    flex-direction: column;
+}
+
+/* Fix headings */
+h2{
+    font-size: 20px;
+    margin-left: 10px !important;
+}
+
+/* Fix paragraph */
+p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-left: 10px !important;
+}
+
+/* Footer center */
+footer{
+    text-align: center;
+}
+
+footer ul{
+    justify-content: center !important;
+}
+
+}
   </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: azure;">

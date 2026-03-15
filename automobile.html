@@ -39,6 +39,59 @@ height:auto;
 padding:40px 0;
 }
 
+/* =========================
+   MOBILE TABLE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+.table-responsive {
+    overflow-x: hidden;   /* remove horizontal scroll */
+}
+
+/* Make table elements block */
+table,
+thead,
+tbody,
+th,
+td,
+tr {
+    display: block;
+    width: 100%;
+}
+
+/* Hide table header (optional but recommended) */
+thead {
+    display: none;
+}
+
+/* Style each row like a card */
+tr {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* Each cell */
+td {
+    text-align: left !important;
+    padding: 8px;
+    border: none !important;
+    position: relative;
+}
+
+/* Add label before each cell (important for readability) */
+td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+}
+
 </style>
 
 </head>

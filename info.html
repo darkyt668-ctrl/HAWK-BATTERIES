@@ -9,6 +9,95 @@
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+  /* ===== Desktop Layout ===== */
+
+.mainhawk{
+    display: flex;
+    gap: 40px;
+    padding: 20px 200px;
+}
+
+.about1{
+    width: 25%;
+}
+
+.about2{
+    width: 75%;
+}
+
+
+/* ===== Tablet Devices ===== */
+
+@media (max-width: 992px){
+
+.mainhawk{
+    flex-direction: column;
+    padding: 20px 60px;
+}
+
+.about1{
+    width: 100%;
+}
+
+.about2{
+    width: 100%;
+}
+
+/* reduce large margins */
+h2{
+    margin-left: 60px !important;
+}
+
+p{
+    margin-left: 60px !important;
+}
+
+}
+
+
+/* ===== Mobile Devices ===== */
+
+@media (max-width: 576px){
+
+/* stack layout */
+.mainhawk{
+    flex-direction: column;
+    padding: 15px;
+}
+
+/* sidebar full width */
+.about1{
+    width: 100%;
+}
+
+/* content full width */
+.about2{
+    width: 100%;
+}
+
+/* fix heading spacing */
+h2{
+    margin-left: 10px !important;
+    font-size: 22px;
+}
+
+/* fix paragraph spacing */
+p{
+    margin-left: 10px !important;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* footer responsive */
+footer{
+    text-align: center;
+}
+
+footer ul{
+    justify-content: center !important;
+}
+
+}
 </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: azure;">
@@ -79,5 +168,19 @@
                 Now , In addition to this, Rainbow Hi-Tech Engineering Company has proudly Introduced Calcium (+) Sealed Maintenance free batteries.</p>
         </div>
       </div>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="background-color: black;">
+        <p class="col-md-4 mb-0 text-body-light text-light">© 2025 Company, Inc</p> <a href="#"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-light"
+          aria-label="HAWK"> <svg class="bi me-2" width="40" height="32" aria-hidden="true" >
+            <use xlink:href="index.html"></use>
+          </svg> </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="abouthawk.html" class="nav-link px-2 text-body-light text-light">About Hawk</a></li>
+          <li class="nav-item"><a href="product.html" class="nav-link px-2 text-body-light text-light">Product</a></li>
+          <li class="nav-item"><a href="info.html" class="nav-link px-2 text-body-light text-light">Technologies</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light text-light">Solution's</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light text-light">Support</a></li>
+        </ul>
+      </footer>
 </body>
 </html>

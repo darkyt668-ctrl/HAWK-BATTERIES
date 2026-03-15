@@ -11,6 +11,119 @@
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+  
+/* =========================
+   DEFAULT DESKTOP DESIGN
+========================= */
+
+.mainauto{
+    display: flex;
+    gap: 40px;
+    padding: 20px 200px;
+}
+
+.auto1{
+    width: 25%;
+}
+
+.auto2{
+    width: 75%;
+}
+
+.carousel-container{
+    width: 100%;
+    max-width: 500px;
+}
+
+.carousel-slide img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   TABLET DEVICES
+========================= */
+
+@media (max-width: 992px){
+
+.mainauto{
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.auto1,
+.auto2{
+    width: 100%;
+}
+
+/* Fix large margins */
+h2{
+    margin-left: 20px !important;
+}
+
+p{
+    margin-left: 20px !important;
+}
+
+/* Make carousel full width */
+.carousel-container{
+    max-width: 100%;
+}
+
+}
+
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+@media (max-width: 576px){
+
+/* Stack everything */
+.mainauto{
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Full width sections */
+.auto1,
+.auto2{
+    width: 100%;
+}
+
+/* Remove big left margins */
+h2{
+    margin-left: 10px !important;
+    font-size: 20px;
+}
+
+p{
+    margin-left: 10px !important;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Carousel responsive */
+.carousel-container{
+    width: 100%;
+}
+
+.carousel-slide img{
+    width: 100%;
+    height: auto;
+}
+
+/* Footer center */
+footer{
+    text-align: center;
+}
+
+footer ul{
+    justify-content: center !important;
+}
+
+}
 </style>
 
 <body>
