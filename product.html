@@ -84,7 +84,53 @@
     width: 100%;
     height: auto;
 }
+@media (max-width: 576px){
 
+.mainhawk{
+    flex-direction: column;
+}
+
+.about1,
+.about2{
+    width: 100%;
+}
+
+.maincard{
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    width: 95% !important;
+}
+
+}
+
+}
+
+/* FULL PAGE FIX */
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main content should take available space */
+.mainhawk{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Footer always stays at bottom */
+footer{
+    margin-top: auto;
 }
 </style>
 <body>
@@ -177,20 +223,7 @@
         </div>
         </div>
       </div>
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="background-color: black;">
-  <p class="col-md-4 mb-0 text-body-light text-light">© 2025 Company, Inc</p> <a href="#"
-    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-light"
-    aria-label="HAWK"> <svg class="bi me-2" width="40" height="32" aria-hidden="true" >
-      <use xlink:href="index.html"></use>
-    </svg> </a>
-  <ul class="nav col-md-4 justify-content-end">
-    <li class="nav-item"><a href="abouthawk.html" class="nav-link px-2 text-body-light text-light">About Hawk</a></li>
-    <li class="nav-item"><a href="product.html" class="nav-link px-2 text-body-light text-light">Product</a></li>
-    <li class="nav-item"><a href="info.html" class="nav-link px-2 text-body-light text-light">Technologies</a></li>
-    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light text-light">Solution's</a></li>
-    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light text-light">Support</a></li>
-  </ul>
-</footer>
+     
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

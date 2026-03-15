@@ -329,3 +329,29 @@ table{
   flex-direction: row;
   justify-content: space-between;
 }
+
+
+/* FULL PAGE FIX */
+html, body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main content should take available space */
+.mainhawk{
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Footer always stays at bottom */
+footer{
+  margin-top: auto;
+}
